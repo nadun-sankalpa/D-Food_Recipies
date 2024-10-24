@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/image/images-removebg-preview.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(26, 25, 25);
+
+}
+
+:root{
+    --bg-color: #000000;
+    --second-bg-color: #000000;
+    --text-color: #fff;
+    --main-color: rgb(7, 235, 129);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+.header{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+}
+.html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 27%;
+    padding-right: 10%;
+    transition: .3s;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color:var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: var(--main-color);
+    transition: .3s;
+}
+
+.heading{
+    text-align: center;
+   margin-top: 30px;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    color:white
+}
+
+.heading span{
+    background: var(--main-color);
+    color:#000000;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/Food-Recipe--Layered-Architecture/image/sincerely-media-rmfYcfs2Oq8-unsplash.jpg) no-repeat;
+    background-position: center;
+    height: 1200px;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+.home .home-content{
+    text-align: center;
+    width: 60rem;
+}
+
+.home .home-content h1{
+    color:var(--text-color);
+    font-size: 3rem;
+
+}
+
+
+/* General Styling */
+.recipies-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.recipie-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.recipie-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.recipie-box:hover img {
+    transform: scale(1.2);
+}
+
+.recipie-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.recipie-layer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    transition: top 0.5s ease;
+}
+
+.recipie-box:hover .recipie-layer {
+    top: 0;
+}
+
+.recipie-layer h4 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.recipie-layer p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.recipie-layer a {
+    background-color: #07eb81;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.recipie-layer a:hover {
+    background-color: white;
+    color: #07eb81;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.About{
+display: flex;
+height: 100vh;
+border: 4px solid black;
+float: right;
+}
+.about-box{
+    background-color: #000000;
+    color: #f5eded;
+}
+
+.f-imge {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .f-imge a img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .f-imge a img:hover {
+            transform: scale(1.2) rotate(10deg);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        hr{
+            color: white;
+        }
+    
+        footer{
+        width: 100%;
+        height: auto;
+  
+        color: white;
+        
+        justify-content: space-between;
+        padding: 12px;
+        font-size: 1.2rem;
+        top: 0;
+        left: 0;
+      }
+
+      nav > ul {
+        list-style: none;
+        display: flex;
+        text-align: center;
+        margin-left: 100px;
+      }
+
+      nav > ul > li {
+        margin: 0 40px;
+      }
+
+      nav > ul > li > a {
+        color: white;
+        text-decoration: none;
+      }
+      
+
+      .detaile{
+        margin-left: 600px;
+        margin-top: -10px;
+      }
+      #copywrite{
+        text-align: center;
+        margin-top: 100px;
+
+      }
+      /* #imge{
+        margin-left: 1100px;
+       margin: -100px;
+        width: 300px;
+        height: 700px;
+        border-radius: 20px;
+      } */
+      .linked {
+            display: flex;
+            
+            margin-top: -300px;
+        }
+
+        .linked ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .linked li {
+            margin-bottom: 15px;
+        }
+
+        .linked a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #333;
+            transition: color 0.3s, transform 0.4s;
+        }
+
+        .linked a:hover {
+            color: #ff6347;
+            transform: scale(1.1) translateX(10px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .linked {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+ @media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    .header{
+        padding: 2rem 3%;
+    }
+    .section{
+        padding: 10rem 3% 2rem;
+    }
+    .recipies{
+        padding-bottom: 7rem;
+    }
+    .recipies-container{
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+
+}
+@media (max-width: 768px){
+    #menu-icon{
+        display: block;
+    }
+
+    .nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 80%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .nav.active{
+        display: block;
+    }
+
+    .nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0; 
+        color: var(--text-color);
+        margin-left: -10%;
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+}
+@media (max-width: 617px){
+  
+    .header{
+        width: 600px;
+    }
+    
+}
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+      
+
+    </style>
+
+</head>
+<body>
+    
+
+
+<header class="header">
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#recipies">Recipies</a></li>
+            <li><a href="#lunch&dinner">Lunch & Dinner</a></li>
+            <li><a href="#sides&snacks">Sides & Snacks</a></li>
+            <li><a href="#drinks">Drinks</a></li>
+            <li><a href="#seasonal">Seasonal</a></li>
+            <li><a href="#specialDiates">Special Diates</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Dinu Vegan Recipies</h1>
+    </div>
+</section>
+
+<section class="recipies" id="recipies">
+  <h1 class="heading">Our <span>Recipies</span></h1>
+  <div class="recipies-container">
+
+      <!-- Recipe Box 1 -->
+      <div class="recipie-box">
+          <img src="/Food-Recipe--Layered-Architecture/image/koththu new 7.jpg" alt="Cheese Koththu" />
+          <div class="recipie-layer">
+              <h4>Cheese Koththu</h4>
+              <p>Delicious and savory cheese koththu for any craving!</p>
+              <a href="/Food-Recipe--Layered-Architecture/Pages/koththu.html">Cheese Koththu Recipe</a>
+          </div>
+      </div>
+
+      <!-- Recipe Box 2 -->
+      <div class="recipie-box">
+          <img src="/Food-Recipe--Layered-Architecture/image/WhatsApp Image 2024-08-16 at 15.39.53.jpeg" alt="Chicken Rice" />
+          <div class="recipie-layer">
+              <h4>Chicken Rice</h4>
+              <p>A flavorful and aromatic chicken rice dish.</p>
+              <a href="/Food-Recipe--Layered-Architecture/Pages/rice.html">Chicken Rice Recipe</a>
+          </div>
+      </div>
+
+      <!-- Recipe Box 3 -->
+      <div class="recipie-box">
+          <img src="/Food-Recipe--Layered-Architecture/image/cup cake new 1.jpg" alt="Cup Cake" />
+          <div class="recipie-layer">
+              <h4>Cup Cake</h4>
+              <p>Moist and fluffy cupcakes perfect for any event.</p>
+              <a href="/Food-Recipe--Layered-Architecture/Pages/Cupcake.html">Cup Cake Recipe</a>
+          </div>
+      </div>
+
+      <!-- Recipe Box 4 -->
+      <div class="recipie-box">
+          <img src="/Food-Recipe--Layered-Architecture/image/pesta new 2.jpg" alt="Cheese Pesta" />
+          <div class="recipie-layer">
+              <h4>Cheese Pesta</h4>
+              <p>Indulgent cheese pasta packed with flavor.</p>
+              <a href="/Food-Recipe--Layered-Architecture/Pages/pesta.html">Cheese Pesta Recipe</a>
+          </div>
+      </div>
+
+      <!-- Recipe Box 5 -->
+      <div class="recipie-box">
+          <img src="/Food-Recipe--Layered-Architecture/image/pizza new 1.jpg" alt="Double Chicken Pizza" />
+          <div class="recipie-layer">
+              <h4>Double Chicken Pizza</h4>
+              <p>The ultimate pizza with double the chicken goodness.</p>
+              <a href="/Food-Recipe--Layered-Architecture/Pages/pizza.html">Double Chicken Pizza Recipe</a>
+          </div>
+      </div>
+
+      <!-- Recipe Box 6 -->
+      <div class="recipie-box">
+          <img src="/Food-Recipe--Layered-Architecture/image/nuddels new 6.jpg" alt="Noodles" />
+          <div class="recipie-layer">
+              <h4>Noodles</h4>
+              <p>Simple yet delicious noodles to satisfy your hunger.</p>
+              <a href="/Food-Recipe--Layered-Architecture/Pages/nuddels.html">Noodles Recipe</a>
+          </div>
+      </div>
+
+  </div>
+</section>
+
+  <footer>
+    <div class="f-imge"> 
+            <a href="https://web.whatsapp.com/"><img src="/image/wt.jpg" width="50px" height="50px">
+            </a>
+            <a href="https://web.facebook.com/home.php"><img src="/image/fd.jpg"width="50px" height="50px alt=">
+            </a>
+            <a href="https://www.instagram.com/"><img src="/image/=.png" width="50px" height="50pxalt="></a>
+            <a href="https://www.linkedin.com/in/dinithi-palliyaguru-8b4505266/ "><img src="/image/inn.png" width="50px" height="50px" alt=""></a>
+    </div><br><br><br>
+    
+        <nav>
+            <ul>
+                <li><a href="/index.html"> Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li><br><br><br>
+    
+            </ul>
+    
+        </nav><br><br>
+       
+        
+       
+    
+        
+    
+    
+        <div class="detaile">
+            <p>Contact Number: 077-6419446</p><br>
+            <p>Email: dinithipalliyaguru@gmail.com</p>
+           
+    
+            
+        </div>
+    
+        <!-- <img id="imge" src="/image/che.jpg" alt=""> -->
+    
+        <div class="linked">
+            <ul>
+                <h1>Menu List</h1><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/Cupcake.html">Capcake recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/koththu.html"> Koththu recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/nuddels.html">Nuddels recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/pesta.html">Pesta recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/pizza.html">Double Chicken Pizza recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/rice.html">Sea-Food rice recipes</a></li>
+            </ul>
+    
+        </div>
+    
+        <p id="copywrite">copywrite &copy;2024</p>
+    
+    </footer>
+
+  
+<section>
+
+</body>
+</html>

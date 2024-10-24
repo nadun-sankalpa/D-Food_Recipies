@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuddels</title>
+
+    <style>
+
+*{
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(26, 25, 25);
+
+}
+
+
+
+.header{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+}
+.html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+.heading{
+    text-align: center;
+   margin-top: 30px;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    color:white
+}
+
+.heading span{
+    background: var(--main-color);
+    color:#000000;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    background: url(Food-Recipe--Layered-Architecture/image/no.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+.home .home-content{
+    text-align: center;
+    width: 60rem;
+}
+
+.home .home-content h1{
+    color:var(--text-color);
+    font-size: 3rem;
+
+}
+
+        
+        body{
+            background-color: black;
+        }   
+        .noodels{
+          color: azure;
+        } 
+
+        .f-imge {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .f-imge a img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .f-imge a img:hover {
+            transform: scale(1.2) rotate(10deg);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        hr{
+            color: white;
+        }
+    
+        footer{
+        width: 100%;
+        height: auto;
+  
+        color: white;
+        
+        justify-content: space-between;
+        padding: 12px;
+        font-size: 1.2rem;
+        top: 0;
+        left: 0;
+      }
+
+      nav > ul {
+        list-style: none;
+        display: flex;
+        text-align: center;
+        margin-left: 550px;
+      }
+
+      nav > ul > li {
+        margin: 0 40px;
+      }
+
+      nav > ul > li > a {
+        color: white;
+        text-decoration: none;
+      }
+      
+
+      .detaile{
+        margin-left: 600px;
+        margin-top: -10px;
+      }
+      #copywrite{
+        text-align: center;
+        margin-top: 100px;
+
+      }
+      /* #imge{
+        margin-left: 1100px;
+       margin: -100px;
+        width: 300px;
+        height: 700px;
+        border-radius: 20px;
+      } */
+      .linked {
+            display: flex;
+            
+            margin-top: -300px;
+        }
+
+        .linked ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .linked li {
+            margin-bottom: 15px;
+        }
+
+        .linked a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #333;
+            transition: color 0.3s, transform 0.4s;
+        }
+
+        .linked a:hover {
+            color: #ff6347;
+            transform: scale(1.1) translateX(10px);
+        }
+
+        /* Optional: Add a fade-in animation when the page loads */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .linked {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @media (max-width: 1200px) {
+            .html{
+                font-size: 55%;
+            }
+            
+        }
+        @media (max-width: 991px) {
+            
+           .resipe img{
+                width: 90vw;
+            }
+        }
+        @media (max-width: 768px) {
+            .html{
+                font-size: 50%;
+            }
+
+            .resipe  img{
+                width: 70vw;
+            }
+        }
+        @media (max-width: 450px) {
+            .html{
+                font-size: 40%;
+            }
+
+            .resipe  img{
+                width: 60vw;
+            }
+        }
+        @media (max-width: 300px) {
+            .html{
+                font-size: 30%;
+            }
+
+            .resipe img{
+                width: 50vw;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+               <a href="/index.html">Home</a>
+            </ul>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1 style="color: #e7dede;">Dinu Vegan Recipies</h1>
+            <h2></h2>
+        </div>
+    </section>
+    <header>
+<h2 style="color: aliceblue;">Nuddels</h2>
+<img src="/Food-Recipe--Layered-Architecture/image/images-removebg-preview.png" alt="">
+<h3><a href="/index.html"> Home</a></h3>
+<div>
+
+    </header>
+    
+<section class="noodels">
+   <div class="resipe">   
+     <img 
+    src="/Food-Recipe--Layered-Architecture/image/nuddels2.jpg" 
+    style="width: 1300px; height: 850px;"
+     alt="">
+   </div>
+
+    <br><br>
+<div class="ingredients">
+    <div class="ingredients title">
+    <h2>Ingredients</h2>
+    <ul>
+        <li>350g fresh or dried egg noodles <li>
+           <li>1½ tbsp sesame oil</li> 
+           <li>1½ tbsp groundnut oil</li> 
+           <li> 1½ tbsp finely chopped garlic</li>
+            <li>1 tbsp finely chopped fresh root ginger</li>
+          <li>  3 tbsp finely chopped spring onions</li>
+        <li>    450g minced pork</li>
+        <li>    3 tbsp yellow bean sauce</li>
+           <li> 1 tbsp chilli bean sauce</li>
+        <li>    1½ tbsp Shaoxing rice wine or dry sherry</li>
+          <li>  2 tbsp dark soy sauce</li>
+           <li> 2 tsp salt</li>
+          <li>  ½ tsp freshy ground black pepper</li>
+         <li>   2 tsp chilli oil (optional)</li>
+          <li>  2 tsp caster sugar</li>
+           <li> 300ml chicken stock preferably homemade</li>
+           <li> 3 tbsp coarsely chopped spring onions, to serve</li>
+           
+    </ul>
+    <div>
+<br>
+<div class="steps">
+    <div class="direction"></div>
+<h2>Directions</h2>
+ 
+ <ol>
+    <div class="step 1">
+        <li>
+            If you are using fresh noodles, blanch them first for 3-5 minutes in boiling water. If you are using dried noodles, cook them in boiling water according to packet instructions.
+        </li>
+        <br>
+    </div>
+ 
+    <div class="step 2">
+        <li>
+           Plunge them in cold water, drain thoroughly, toss them in the sesame oil and set aside until you are ready to use them. Covered with cling film, they can be kept for up to 2 hours in the refrigerator.
+          <li>
+            <br>
+    </div>
+
+    <div class="step 3">
+        <li>
+            Heat a wok or large frying pan until hot. Add the groundnut oil and, when it is very hot, add the garlic, ginger and spring onions. Stir fry for 15 seconds, then add the pork. Stir well to break up and stir fry for 2 minutes or more until the pork loses its pink colour.
+ 
+        </li>
+        <br>
+    </div>
+    
+    <div  class="step 4">
+        <li>
+            Add the rest of the ingredients except the spring onion garnish, stirring all the time. Bring to the boil, turn the heat down low and simmer for 5 minutes.
+
+        </li> <br>
+    </div>
+
+       <div class="step 5">
+        <li>
+            Plunge the noodles into boiling water for 30 seconds or until they are just heated through, then drain well in a colander or sieve. Quickly tip the noodles into a large bowl and pour the hot sauce over the top. Mix everything together loosely then sprinkle on the spring onions and serve.
+
+        </li> <br>
+       </div>
+        
+       
+ </ol>
+<div>
+ <br><br>
+ <div class="image 1">                                          <img src="/Food-Recipe--Layered-Architecture/image/3.webp"  style="width: 600px  ; height: 500px;"  alt="">
+    <img 
+    src="/Food-Recipe--Layered-Architecture/image/2.webp" 
+    style="width: 600px; height: 500px;" 
+    alt="">
+ </div>
+ 
+
+ <iframe width="500px" height="300px" src="https://www.youtube.com/embed/Sw1UAaYZVeA?si=LEFKwUkmybHwt3VU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 
+ <footer>
+    <div class="f-imge"> 
+            <a href="https://web.whatsapp.com/"><img src="/image/wt.jpg" width="50px" height="50px">
+            </a>
+            <a href="https://web.facebook.com/home.php"><img src="/image/fd.jpg"width="50px" height="50px alt=">
+            </a>
+            <a href="https://www.instagram.com/"><img src="/image/=.png" width="50px" height="50pxalt="></a>
+            <a href="https://www.linkedin.com/in/dinithi-palliyaguru-8b4505266/ "><img src="/image/inn.png" width="50px" height="50px" alt=""></a>
+    </div><br><br><br>
+    
+        <nav>
+            <ul>
+                <li><a href="/index.html"> Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li><br><br><br>
+    
+            </ul>
+    
+        </nav><br><br>
+       
+        
+       
+    
+        
+    
+    
+        <div class="detaile">
+            <p>Contact Number: 077-6419446</p><br>
+            <p>Email: dinithipalliyaguru@gmail.com</p>
+           
+    
+            
+        </div>
+    
+        <!-- <img id="imge" src="/image/che.jpg" alt=""> -->
+    
+        <div class="linked">
+            <ul>
+                <h1>Menu List</h1><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/Cupcake.html">Capcake recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/koththu.html"> Koththu recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/nuddels.html">Nuddels recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/pesta.html">Pesta recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/pizza.html">Double Chicken Pizza recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/rice.html">Sea-Food rice recipes</a></li>
+            </ul>
+    
+        </div>
+    
+        <p id="copywrite">copywrite &copy;2024</p>
+    
+    </footer>
+    <section>
+</body>
+</html>

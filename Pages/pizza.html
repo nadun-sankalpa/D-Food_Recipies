@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+
+    <style>
+
+*{
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    background-color: rgb(26, 25, 25);
+    font-family: 'Playfair Display', serif;
+
+
+}
+
+
+
+.header{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+}
+.html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+.heading{
+    text-align: center;
+   margin-top: 30px;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    color:white
+}
+
+.heading span{
+    background: var(--main-color);
+    color:#000000;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1100px;
+    background: url(/Food-Recipe--Layered-Architecture/image/istockphoto-1777754805-1024x1024.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+.home .home-content{
+    text-align: center;
+    width: 60rem;
+}
+
+.home .home-content h1{
+    color:var(--text-color);
+    font-size: 3rem;
+
+}
+
+
+
+        body{
+            background-color: black;
+        }
+        .pizza{
+          color: azure;
+        }   
+       
+        .image{
+            text-align: left;
+            
+        }
+        .pages{
+            text-align: left;
+            font-size: 1.5rem;
+        }
+        .main{
+            text-align: left;
+            color: aliceblue;
+            font-size: 2rem;
+        }
+
+        .f-imge {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .f-imge a img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .f-imge a img:hover {
+            transform: scale(1.2) rotate(10deg);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        hr{
+            color: white;
+        }
+    
+        footer{
+        width: 100%;
+        height: auto;
+  
+        color: white;
+        
+        justify-content: space-between;
+        padding: 12px;
+        font-size: 1.2rem;
+        top: 0;
+        left: 0;
+      }
+
+      nav > ul {
+        list-style: none;
+        display: flex;
+        text-align: center;
+        margin-left: 550px;
+      }
+
+      nav > ul > li {
+        margin: 0 40px;
+      }
+
+      nav > ul > li > a {
+        color: white;
+        text-decoration: none;
+      }
+      
+
+      .detaile{
+        margin-left: 600px;
+        margin-top: -10px;
+      }
+      #copywrite{
+        text-align: center;
+        margin-top: 100px;
+
+      }
+      /* #imge{
+        margin-left: 1100px;
+       margin: -100px;
+        width: 300px;
+        height: 700px;
+        border-radius: 20px;
+      } */
+      .linked {
+            display: flex;
+            
+            margin-top: -300px;
+        }
+
+        .linked ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .linked li {
+            margin-bottom: 15px;
+        }
+
+        .linked a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #333;
+            transition: color 0.3s, transform 0.4s;
+        }
+
+        .linked a:hover {
+            color: #ff6347;
+            transform: scale(1.1) translateX(10px);
+        }
+
+        /* Optional: Add a fade-in animation when the page loads */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .linked {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @media (max-width: 1200px) {
+            .html{
+                font-size: 55%;
+            }
+            
+        }
+        @media (max-width: 991px) {
+            
+           .imag1 img{
+                width: 90vw;
+            }
+        }
+        @media (max-width: 768px) {
+            .html{
+                font-size: 50%;
+            }
+
+            .imag1  img{
+                width: 70vw;
+            }
+        }
+        @media (max-width: 450px) {
+            .html{
+                font-size: 40%;
+            }
+
+            .imag1  img{
+                width: 60vw;
+            }
+        }
+        @media (max-width: 300px) {
+            .html{
+                font-size: 30%;
+            }
+
+            .imag1 img{
+                width: 50vw;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <nav>
+            <ul>
+                <a href="/index.html">home</a>
+            </ul>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1 style="color: #e7dede;">Dinu Vegan Recipies</h1>
+            <h2></h2>
+        </div>
+    </section>
+
+<h2 class="main">double Chicken Pizza</h2>
+<div>
+
+   
+    
+
+<section class="pizza">
+    <div class="recipe">
+        <div class="image1">    <img src="/Food-Recipe--Layered-Architecture/image/pizza new 1.jpg" style="width: 1200px; height: 700px; object-fit: cover;" alt="">
+        </div>
+
+        <div class="Description">
+    <h2> <i>Description</i></h2>
+</div>
+<div class="Description title">
+    <h3><p><i>Follow these basic instructions for a thick, crisp, and chewy pizza crust at home. The recipe yields enough pizza dough for two 12-inch pizzas and you can freeze half of the dough for later. Close to 2 pounds of dough total.</i></p></h3>
+    <div>
+<div class="ingredients">
+<h2>Ingredients</h2>
+</div>
+<div >
+    <ul>
+        <li><i><h3>1 and 1/3 cups (320ml) warm water (between 100-110°F, 38-43°C)</h3></i></li>
+        <li><i><h3>2 and 1/4 teaspoons (7g) Platinum Yeast from Red Star instant yeast (1 standard packet)*</h3></i></li>
+        <li><i><h3>1 Tablespoon (13g) granulated sugar</h3></i></li>
+        <li><i><h3>2 Tablespoons (30ml) olive oil, plus more for pan and brushing on dough</h3></i></li>
+        <li><i><h3>1 teaspoon salt</h3></i></li>
+        <li><i><h3>3 and 1/2 cups (about 450g)</h3></i></li>
+    </ul>
+<div>
+
+<div class="ingredients">
+<h2>Instructions</h2>
+</div>
+<ol>
+    <div class="step 1"> 
+        <li>
+            
+         Whisk the warm water, yeast, and granulated sugar together in the bowl of your stand mixer fitted with a dough hook or paddle attachment. Cover and allow to rest for 5 minutes. *If you don’t have a stand mixer, simply use a large mixing bowl and mix the dough with a wooden spoon or silicone spatula in the next step.
+        </li><br>
+    </div>
+    <div class="step 2">
+        <li>
+            Add the olive oil, salt, and flour. Beat on low speed for 2 minutes.
+        </li><br>
+    </div>
+
+    <div class="step 3">
+        <li>
+            the dough: Keep the dough in the mixer and beat for an additional 5 full minutes, or knead by hand on a lightly floured surface for 5 full minutes. (If you’re new to bread-baking, my How to Knead Dough video tutorial can help here.) If the dough becomes too sticky during the kneading process, sprinkle 1 teaspoon of flour at a time on the dough or on the work surface/in the bowl to make a soft, slightly tacky dough. Do not add more flour than you need because you do not want a dry dough. After kneading, the dough should still feel a little soft. Poke it with your finger—if it slowly bounces back, your dough is ready to rise. You can also do a “windowpane test” to see if your dough has been kneaded long enough: tear off a small (roughly golfball-size) piece of dough and gently stretch it out until it’s thin enough for light to pass through it. Hold it up to a window or light. Does light pass through the stretched dough without the dough tearing first? If so, your dough has been kneaded long enough and is ready to rise. If not, keep kneading until it passes the windowpane test.
+
+        </li><br>
+    </div>
+    <div class="step 4">
+        <li>
+            Rise: Lightly grease a large bowl with oil or nonstick spray—just use the same bowl you used for the dough. Place the dough in the bowl, turning it to coat all sides in the oil. Cover the bowl with aluminum foil, plastic wrap, or a clean kitchen towel. Allow the dough to rise at room temperature for 60-90 minutes or until double in size. (Tip: For the warm environment on a particularly cold day, heat your oven to 150°F (66°C). Turn the oven off, place the dough inside, and keep the door slightly ajar. This will be a warm environment for your dough to rise. After about 30 minutes, close the oven door to trap the air inside with the rising dough. When it’s doubled in size, remove from the oven.)
+
+        </li><br>
+    </div>
+    <div class="step 5">
+        <li>
+            Preheat oven to 475°F (246°C). Allow it to heat for at least 15-20 minutes as you shape the pizza. (If using a pizza stone, place it in the oven to preheat as well.) Lightly grease baking sheet or pizza pan with nonstick spray or olive oil. Sprinkle lightly with cornmeal, which gives the crust extra crunch and flavor.
+
+        </li><br>
+
+    </div>
+    <div class="step 6">
+        <li>
+            Shape the dough: When the dough is ready, punch it down to release any air bubbles. Divide the dough in half. (If not making 2 pizzas, freeze half of the dough for another time. See freezing instructions below.) On a lightly floured work surface using lightly floured hands or rolling pin, gently flatten the dough into a disc. Place on prepared pan and, using lightly floured hands, stretch and flatten the disc into a 12-inch circle, about 1/2-inch thick. If the dough keeps shrinking back as you try to stretch it, stop what you’re doing, cover it lightly for 5-10 minutes, then try again. Once shaped into a 12-inch circle, lift the edge of the dough up to create a lip around the edges. I simply pinch the edges up to create the rim. If using a pizza stone, place the dough directly on baker’s peels dusted with cornmeal.
+
+        </li><br>
+    </div>
+     
+    <div class="step 7">
+        <li>
+            Cover dough lightly with plastic wrap or a clean kitchen towel and allow to rest for a few minutes as you prepare your pizza toppings. I suggest pepperoni & green peppers or jalapeño slices, Hawaiian pizza, pesto pizza, spinach artichoke white pizza, or homemade BBQ chicken pizza.
+
+        </li><br>
+    </div>
+<div class="step 8">
+    <li>
+        Top & bake the pizza: Using your fingers, push dents into the surface of the dough to prevent bubbling. To prevent the filling from making your pizza crust soggy, brush the top lightly with olive oil. Top with your favorite toppings and bake for 13-15 minutes or until the crust is golden brown.
+
+    </li><br>
+</div>
+<div class="step 9">
+    <li>    Slice hot pizza and serve immediately. Cover leftover pizza tightly and store in the refrigerator. Reheat as you prefer. Baked pizza slices can be frozen up to 3 months.
+    </li><br>
+</div>
+    
+
+</ol>
+<div>
+<br>
+<div class=" images2">
+<img src="/Food-Recipe--Layered-Architecture/image/pizza 3.webp" style="height: 200;" alt="">
+<img src="/Food-Recipe--Layered-Architecture/image/pizzza4.jpg" style="height: 200;" alt="">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MDX8fylSisU?si=d_PBvUt09RLH1KPx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+</div>
+
+<footer>
+    <div class="f-imge"> 
+            <a href="https://web.whatsapp.com/"><img src="/image/wt.jpg" width="50px" height="50px">
+            </a>
+            <a href="https://web.facebook.com/home.php"><img src="/image/fd.jpg"width="50px" height="50px alt=">
+            </a>
+            <a href="https://www.instagram.com/"><img src="/image/=.png" width="50px" height="50pxalt="></a>
+            <a href="https://www.linkedin.com/in/dinithi-palliyaguru-8b4505266/ "><img src="/image/inn.png" width="50px" height="50px" alt=""></a>
+    </div><br><br><br>
+    
+        <nav>
+            <ul>
+                <li><a href="/index.html"> Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li><br><br><br>
+    
+            </ul>
+    
+        </nav><br><br>
+       
+        
+       
+    
+        
+    
+    
+        <div class="detaile">
+            <p>Contact Number: 077-6419446</p><br>
+            <p>Email: dinithipalliyaguru@gmail.com</p>
+           
+    
+            
+        </div>
+    
+        <!-- <img id="imge" src="/image/che.jpg" alt=""> -->
+    
+        <div class="linked">
+            <ul>
+                <h1>Menu List</h1><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/Cupcake.html">Capcake recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/koththu.html"> Koththu recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/nuddels.html">Nuddels recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/pesta.html">Pesta recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/pizza.html">Double Chicken Pizza recipes</a></li><br>
+                <li><a href="/Food-Recipe--Layered-Architecture/Pages/rice.html">Sea-Food rice recipes</a></li>
+            </ul>
+    
+        </div>
+    
+        <p id="copywrite">copywrite &copy;2024</p>
+    
+    </footer>
+    <section>
+</body>
+</html>

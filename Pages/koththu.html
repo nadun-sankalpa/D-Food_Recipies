@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koththu</title>
+
+    <style>
+
+*{
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(26, 25, 25);
+
+}
+
+
+
+.header{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+}
+.html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+.heading{
+    text-align: center;
+   margin-top: 30px;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    color:white
+}
+
+.heading span{
+    background: var(--main-color);
+    color:#000000;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    background: url(/Food-Recipe--Layered-Architecture/image/k.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+.home .home-content{
+    text-align: center;
+    width: 60rem;
+}
+
+.home .home-content h1{
+    color:var(--text-color);
+    font-size: 3rem;
+
+}
+
+
+        body{
+            background-color: black;
+        }
+        .Koththu{
+          color: azure;
+        }
+
+        .f-imge {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .f-imge a img {
+            width: 80px;
+            height: 80px;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .f-imge a img:hover {
+            transform: scale(1.2) rotate(10deg);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        hr{
+            color: white;
+        }
+    
+        footer{
+            margin: 0;
+        width: 100%;
+        height: auto;
+  
+        color: white;
+        
+        justify-content: space-between;
+        padding: 12px;
+        font-size: 1.2rem;
+        top: 0;
+        left: 0;
+      }
+
+      nav > ul {
+        list-style: none;
+        display: flex;
+        text-align: center;
+        margin-left: 400px;
+      }
+
+      nav > ul > li {
+        margin: 0 40px;
+      }
+
+      nav > ul > li > a {
+        color: white;
+        text-decoration: none;
+      }
+      
+
+      .detaile{
+        text-align: center;
+        margin-top: -10px;
+      }
+      #copywrite{
+        text-align: center;
+        margin-top: 100px;
+
+      }
+      /* #imge{
+        margin-left: 1100px;
+       margin: -100px;
+        width: 300px;
+        height: 700px;
+        border-radius: 20px;
+      } */
+      .linked {
+            display: flex;
+            
+            margin-top: -300px;
+        }
+
+        .linked ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .linked li {
+            margin-bottom: 15px;
+        }
+
+        .linked a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #333;
+            transition: color 0.3s, transform 0.4s;
+        }
+
+        .linked a:hover {
+            color: #ff6347;
+            transform: scale(1.1) translateX(10px);
+        }
+
+        /* Optional: Add a fade-in animation when the page loads */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .linked {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @media (max-width: 1200px) {
+            .html{
+                font-size: 55%;
+            }
+            
+        }
+        @media (max-width: 991px) {
+            
+           .resipe img{
+                width: 90vw;
+            }
+        }
+        @media (max-width: 768px) {
+            .html{
+                font-size: 50%;
+            }
+
+            .resipe  img{
+                width: 70vw;
+            }
+        }
+        @media (max-width: 450px) {
+            .html{
+                font-size: 40%;
+            }
+
+            .resipe  img{
+                width: 60vw;
+            }
+        }
+        @media (max-width: 300px) {
+            .html{
+                font-size: 30%;
+            }
+
+            .resipe img{
+                width: 50vw;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+               <a href="/index.html">Home</a>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="home" id="home">
+    <div class="home-content">
+        <h1 style="color: #efe6e6;">Dinu Vegan Recipies</h1>
+        <h2></h2>
+    </div>
+</section>
+        
+    <section class="Koththu">
+        <h2 style="color: #e7dede;">Cheese Koththu</h2>
+        <div class="resipe">
+    <img
+     src="/Food-Recipe--Layered-Architecture/image/ko.jpg"
+      style="width: 1000px;height: 700px;"
+       alt="">
+<div>
+    <div class="Ingredients">
+        <div class="Ingredients title">
+    <h2>Ingredients</h2>
+</div>
+    <ul>
+        <li> tablespoon canola oil</li>
+        <li>1 medium onion</li>
+        <li>1 tbsp crushed garlic a</li>
+         <li>1 tbsp crushed ginger</li>   
+         <li>1 teaspoon of Araliya pepper powder
+</li>
+
+<li>2 sliced leeks washed
+</li>
+<li>100 grams of a preferred meat (shredded chicken leftover chicken curry)
+</li>
+<li>3 grated carrots</li>
+<li>4 eggs</li>
+<li>1 cup shredded cheese</li>
+<li>Salt and pepper</li>
+<li>6 chopped Roti</li>
+<li>Curry Spices</li>
+<li>1 tbsp Araliya un-roasted curry powder</li>
+<li>¼ tsp Araliya pepper powder</li>
+<li>
+    2 tbsp of Araliya Chilli Pieces </li>
+
+
+    </ul>
+<div>
+    <br>
+    <div class="step">
+        <div class="directions">
+    <h2>Directions</h2>
+    <div>
+    <ol>
+        <div class="step 1"> 
+            <li>
+                In a non-stick pan, heat the ghee oil over medium-high heat. When the it is heated, pan-fry the parata or roti until golden brown.
+
+            </li> 
+        </div>
+
+       <br> 
+       <div class="step 2">   
+          <li>
+            In a wok, heat oil and add in 4 eggs. Deep fry eggs and stir while they fry.li
+          </li>
+       </div>
+       <br>
+
+      <div class="step 3">
+        <li>
+            In a wok, heat canola oil, add the onion and saute until golden brown. Add 2 tea spoons of Araliya chilli paste. Add the ginger and garlic. Add the vegetables (but not the carrots) and salt to taste and stir-fry for a few minutes. 
+        </li>
+    </div>
+    <br>
+
+<div class="step 4"> 
+     <li>
+        Add the chicken, Araliya pepper powder and Araliya chilli pieces or flakes and the curry and stir fry until the vegetables golden brown.  Add the carrots and mix them in. Taste and season with salt.
+     </li> 
+</div>
+<br>
+<div class="step 5">
+   <li>
+    To top it off with a Cheese Sauce, add butter, when it starts melting, add milk and flour and keep whisking. Finally, add the shredded cheese and mix through. Pour the hot cheese sauce just before serving the Kottu.
+   </li>
+</div>
+
+<br>
+
+         
+
+
+
+    </ol>
+
+    <br>
+<div class=" koththu vedio">
+    <video 
+    src="/Food-Recipe--Layered-Architecture/video/Download (1).mp4"
+    style="width: 700px;
+    height: 400px;" 
+    controls> 
+    </video>        
+   
+
+    
+    <iframe width="700px" height="400px" src="https://www.youtube.com/embed/xe44gqJaRYs?si=Brr9_7xYZcrBH1al" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div>
+        <br>
+
+<footer>
+<div class="f-imge"> 
+        <a href="https://web.whatsapp.com/"><img src="/image/wt.jpg" width="50px" height="50px">
+        </a>
+        <a href="https://web.facebook.com/home.php"><img src="/image/fd.jpg"width="50px" height="50px alt=">
+        </a>
+        <a href="https://www.instagram.com/"><img src="/image/=.png" width="50px" height="50pxalt="></a>
+        <a href="https://www.linkedin.com/in/dinithi-palliyaguru-8b4505266/ "><img src="/image/inn.png" width="50px" height="50px" alt=""></a>
+</div><br><br><br>
+
+    <nav>
+        <ul>
+            <li><a href="/index.html"> Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li><br><br><br>
+
+        </ul>
+
+    </nav><br><br>
+   
+    
+   
+
+    
+
+
+    <div class="detaile">
+        <p>Contact Number: 077-6419446</p><br>
+        <p>Email: dinithipalliyaguru@gmail.com</p>
+       
+
+        
+    </div>
+
+    <!-- <img id="imge" src="/image/che.jpg" alt=""> -->
+
+    <div class="linked">
+        <ul>
+            <h1>Menu List</h1><br>
+            <li><a href="/Food-Recipe--Layered-Architecture/Pages/Cupcake.html">Capcake recipes</a></li><br>
+            <li><a href="/Food-Recipe--Layered-Architecture/Pages/koththu.html"> Koththu recipes</a></li><br>
+            <li><a href="/Food-Recipe--Layered-Architecture/Pages/nuddels.html">Nuddels recipes</a></li><br>
+            <li><a href="/Food-Recipe--Layered-Architecture/Pages/pesta.html">Pesta recipes</a></li><br>
+            <li><a href="/Food-Recipe--Layered-Architecture/Pages/pizza.html">Double Chicken Pizza recipes</a></li><br>
+            <li><a href="/Food-Recipe--Layered-Architecture/Pages/rice.html">Sea-Food rice recipes</a></li>
+        </ul>
+
+    </div>
+
+    <p id="copywrite">copywrite &copy;2024</p>
+
+</footer>
+               
+        
+    <div>
+        <section>
+</body>
+</html>
+
+
+
+
+
+
+      
